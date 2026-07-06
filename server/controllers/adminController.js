@@ -240,14 +240,14 @@ exports.getActivityLogs = async (req, res) => {
 
 exports.getSystemSettings = async (req, res) => {
   try {
-    let datesSetting = await SystemSetting.findOne({ key: 'jobfest_dates' });
+    let datesSetting = await SystemSetting.findOne({ key: 'hirovate_dates' });
     if (!datesSetting) {
       datesSetting = await SystemSetting.create({
-        key: 'jobfest_dates',
+        key: 'hirovate_dates',
         value: {
           startDate: '2027-03-30',
           endDate: '2027-03-31',
-          eventName: 'JobFest 2027',
+          eventName: 'Hirovate 2027',
           organizer: 'TOPS Technologies'
         }
       });
@@ -262,7 +262,7 @@ exports.updateSystemSettings = async (req, res) => {
   try {
     const { startDate, endDate, eventName, organizer } = req.body;
     let datesSetting = await SystemSetting.findOneAndUpdate(
-      { key: 'jobfest_dates' },
+      { key: 'hirovate_dates' },
       {
         value: { startDate, endDate, eventName, organizer }
       },
@@ -273,7 +273,7 @@ exports.updateSystemSettings = async (req, res) => {
     await ActivityLog.create({
       user: req.user.id,
       action: 'SYSTEM_SETTINGS_UPDATE',
-      details: `Updated JobFest Config to: ${eventName} (${startDate} to ${endDate})`
+      details: `Updated Hirovate Config to: ${eventName} (${startDate} to ${endDate})`
     });
 
     res.status(200).json({ success: true, data: datesSetting.value });

@@ -12,7 +12,7 @@ const StudentDashboard = () => {
   const [eventSettings, setEventSettings] = useState({
     startDate: '2027-03-30',
     endDate: '2027-03-31',
-    eventName: 'JobFest 2027',
+    eventName: 'Hirovate 2027',
     organizer: 'TOPS Technologies'
   });
   const user = JSON.parse(localStorage.getItem('user') || '{}');

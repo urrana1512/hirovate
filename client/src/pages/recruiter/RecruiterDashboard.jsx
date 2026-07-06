@@ -28,7 +28,7 @@ const RecruiterDashboard = () => {
   const [eventSettings, setEventSettings] = useState({
     startDate: '2027-03-30',
     endDate: '2027-03-31',
-    eventName: 'JobFest 2027',
+    eventName: 'Hirovate 2027',
     organizer: 'TOPS Technologies'
   });
   const [loading, setLoading] = useState(true);

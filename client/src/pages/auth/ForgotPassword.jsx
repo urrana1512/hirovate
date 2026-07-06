@@ -35,7 +35,8 @@ const ForgotPassword = () => {
             </Link>
             
             <div className="text-center mb-4">
-              <img src="/logo.png" alt="JobFest Logo" className="mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
               <h2 className="fw-bold text-main mb-2">Forgot Password?</h2>
               <p className="text-muted">Enter the email address associated with your account and we'll send you an OTP to reset your password.</p>
             </div>

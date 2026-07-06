@@ -39,7 +39,7 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 
 // Database connection
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/jobfest';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hirovate';
 
 const seedAdmin = require('./utils/seeder');
 
@@ -75,14 +75,14 @@ app.use('/api/queue', queueRoutes);
 const SystemSetting = require('./models/SystemSetting');
 app.get('/api/settings', async (req, res) => {
   try {
-    let datesSetting = await SystemSetting.findOne({ key: 'jobfest_dates' });
+    let datesSetting = await SystemSetting.findOne({ key: 'hirovate_dates' });
     if (!datesSetting) {
       datesSetting = await SystemSetting.create({
-        key: 'jobfest_dates',
+        key: 'hirovate_dates',
         value: {
           startDate: '2027-03-30',
           endDate: '2027-03-31',
-          eventName: 'JobFest 2027',
+          eventName: 'Hirovate 2027',
           organizer: 'TOPS Technologies'
         }
       });
@@ -94,7 +94,7 @@ app.get('/api/settings', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('JobFest API is running...');
+  res.send('Hirovate API is running...');
 });
 
 // Error handling middleware

@@ -22,7 +22,7 @@ const Contact = () => {
               </div>
               <div className="d-flex align-items-center gap-3">
                 <FiMail size={24} />
-                <span>contact@jobfest.com</span>
+                <span>contact@hirovate.com</span>
               </div>
               <div className="d-flex align-items-center gap-3">
                 <FiMapPin size={24} />

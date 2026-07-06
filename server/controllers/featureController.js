@@ -45,7 +45,7 @@ exports.triggerNotification = async (req, res) => {
     const { email, phone, message, subject } = req.body;
 
     if (email) {
-      await sendEmail({ email, subject: subject || 'JobFest Notification', message });
+      await sendEmail({ email, subject: subject || 'Hirovate Notification', message });
     }
     if (phone) {
       await sendSMS({ phone, message });

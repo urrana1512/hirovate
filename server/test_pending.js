@@ -3,8 +3,8 @@ async function test() {
   try {
     // 1. Login as admin
     const loginRes = await axios.post('http://localhost:5000/api/auth/login', {
-      email: 'jobfestadmin@gmail.com',
-      password: 'jobfest@123'
+      email: 'hirovateadmin@gmail.com',
+      password: 'hirovate@123'
     });
     const token = loginRes.data.token;
     

@@ -24,7 +24,7 @@ const FAQs = () => {
     <div className="pt-5 mt-5 container mb-5">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-5">
         <h1 className="fw-bold text-main">Frequently Asked Questions</h1>
-        <p className="text-muted lead max-w-2xl mx-auto">Find answers to common questions about the JobFest platform and placement process.</p>
+        <p className="text-muted lead max-w-2xl mx-auto">Find answers to common questions about the Hirovate platform and placement process.</p>
       </motion.div>
 
       <div className="row justify-content-center">

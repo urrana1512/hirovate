@@ -285,9 +285,9 @@ const CompanyProfileSetup = () => {
                   />
                 </div>
 
-                {/* JobFest Driving Days Attendance Hours */}
+                {/* Hirovate Driving Days Attendance Hours */}
                 <div className="col-12 mt-4">
-                  <h6 className="fw-bold text-primary border-bottom pb-2 mb-3">JobFest Attendance Schedules</h6>
+                  <h6 className="fw-bold text-primary border-bottom pb-2 mb-3">Hirovate Attendance Schedules</h6>
                   <div className="row g-3">
                     {profile.attendanceTimings && profile.attendanceTimings.length > 0 ? (
                       profile.attendanceTimings.map((timing, index) => (

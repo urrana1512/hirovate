@@ -169,8 +169,8 @@ exports.callNextCandidate = async (req, res) => {
       // Email Notification - Turn Arrived
       await sendEmail({
         email: studentUser.email,
-        subject: `Your Interview Turn Has Arrived | JobFest`,
-        message: `Hello ${studentUser.name},\n\nYour interview turn for ${queue.company.companyName} - ${queue.job.title} has arrived!\n\nPlease report immediately at:\nVenue: ${queue.venue}\nTime: Right Now\n\nThank you,\nJobFest Team`
+        subject: `Your Interview Turn Has Arrived | Hirovate`,
+        message: `Hello ${studentUser.name},\n\nYour interview turn for ${queue.company.companyName} - ${queue.job.title} has arrived!\n\nPlease report immediately at:\nVenue: ${queue.venue}\nTime: Right Now\n\nThank you,\nHirovate Team`
       });
 
       // In-App dynamic alert
@@ -195,8 +195,8 @@ exports.callNextCandidate = async (req, res) => {
         if (remainingUser) {
           await sendEmail({
             email: remainingUser.email,
-            subject: `Your Interview Turn Is Coming Soon | JobFest`,
-            message: `Hello ${remainingUser.name},\n\nYour interview turn for ${queue.company.companyName} - ${queue.job.title} is coming soon.\n\nPlease be present at:\nVenue: ${queue.venue}\n\nCurrent Queue Position: 1\n\nThank you,\nJobFest Team`
+            subject: `Your Interview Turn Is Coming Soon | Hirovate`,
+            message: `Hello ${remainingUser.name},\n\nYour interview turn for ${queue.company.companyName} - ${queue.job.title} is coming soon.\n\nPlease be present at:\nVenue: ${queue.venue}\n\nCurrent Queue Position: 1\n\nThank you,\nHirovate Team`
           });
 
           await InterviewNotification.create({

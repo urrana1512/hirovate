@@ -73,7 +73,8 @@ const ResetPassword = () => {
         <div className="col-md-7 col-lg-5">
           <div className="premium-card p-4 p-md-5">
             <div className="text-center mb-4">
-              <img src="/logo.png" alt="JobFest Logo" className="mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
               <h3 className="fw-bold text-main mb-2">Create New Password</h3>
               <p className="text-muted">Enter the 6-digit OTP sent to {email || 'your email'} and choose a new password.</p>
             </div>

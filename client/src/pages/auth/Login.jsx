@@ -46,7 +46,8 @@ const Login = () => {
         <div className="col-md-7 col-lg-5">
           <div className="premium-card p-4 p-md-5">
             <div className="text-center mb-4">
-              <img src="/logo.png" alt="JobFest Logo" className="mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
               <h2 className="fw-bold text-main mb-1">Welcome Back</h2>
               <p className="text-muted">Enter your credentials to access your account.</p>
             </div>
@@ -81,7 +82,7 @@ const Login = () => {
             </div>
             
             <div className="mt-4 pt-4 border-top text-center">
-               <p className="text-muted small mb-0">For demo purposes, the admin login is: <br/><strong>jobfestadmin@gmail.com / jobfest@123</strong></p>
+               <p className="text-muted small mb-0">For demo purposes, the admin login is: <br/><strong>hirovateadmin@gmail.com / hirovate@123</strong></p>
             </div>
           </div>
         </div>

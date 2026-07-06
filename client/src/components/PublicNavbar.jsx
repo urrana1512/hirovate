@@ -24,8 +24,9 @@ const PublicNavbar = () => {
         
         {/* Logo */}
         <Link to="/" className="navbar-logo d-flex align-items-center gap-2 text-decoration-none">
-          <img src="/logo.png" alt="JobFest Logo" style={{ width: '38px', height: '38px', objectFit: 'cover', borderRadius: '8px' }} />
-          <span className="fw-bold fs-4 text-primary">JobFest</span>
+          <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only" style={{ width: '38px', height: '38px', objectFit: 'cover', borderRadius: '8px' }} />
+          <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only" style={{ width: '38px', height: '38px', objectFit: 'cover', borderRadius: '8px' }} />
+          <span className="fw-bold fs-4 text-primary">Hirovate</span>
         </Link>
 
         {/* Desktop Links */}

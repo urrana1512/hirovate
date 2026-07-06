@@ -25,7 +25,7 @@ const LandingPage = () => {
                 Organized by TOPS Technologies 🚀
               </a>
               <h1 className="display-3 fw-bold text-main mb-4 lh-tight">
-                Launch Your Career with <span className="text-primary">JobFest</span>
+                Launch Your Career with <span className="text-primary">Hirovate</span>
               </h1>
               <p className="lead text-muted mb-5 pe-lg-4">
                 The most advanced corporate placement platform connecting top-tier students with industry-leading companies. Seamless interviews, AI resume analysis, and real-time updates.
@@ -165,7 +165,7 @@ const LandingPage = () => {
         <div className="container py-5 position-relative z-1">
           <h2 className="display-5 fw-bold mb-4">Ready to Accelerate Your Career?</h2>
           <p className="lead mb-5 opacity-75 max-w-2xl mx-auto">
-            Join thousands of students and top companies already using JobFest to make the perfect match.
+            Join thousands of students and top companies already using Hirovate to make the perfect match.
           </p>
           <Link to="/register" className="btn btn-light text-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg">
             Get Started Now <FiArrowRight className="ms-2" />

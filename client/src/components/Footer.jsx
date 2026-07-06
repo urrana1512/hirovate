@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="row g-4 mb-5">
           <div className="col-lg-4 pe-lg-5">
             <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none text-white mb-3">
-              <img src="/logo.png" alt="JobFest Logo" style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '8px' }} />
+              <img src="/logo-dark.png" alt="Hirovate Logo" style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '8px' }} />
               <div>
-                <span className="fw-bold fs-4 d-block lh-1">JobFest</span>
+                <span className="fw-bold fs-4 d-block lh-1">Hirovate</span>
                 <span className="text-muted small" style={{ fontSize: '0.75rem' }}>Organized by TOPS Technologies</span>
               </div>
             </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
-          <p className="mb-2 mb-md-0">&copy; {new Date().getFullYear()} JobFest. Coordinated & Organized by <a href="https://www.tops-int.com/" target="_blank" rel="noreferrer" className="text-white text-decoration-none fw-bold hover-primary">TOPS Technologies</a>. All rights reserved.</p>
+          <p className="mb-2 mb-md-0">&copy; {new Date().getFullYear()} Hirovate. Coordinated & Organized by <a href="https://www.tops-int.com/" target="_blank" rel="noreferrer" className="text-white text-decoration-none fw-bold hover-primary">TOPS Technologies</a>. All rights reserved.</p>
           <p className="mb-0">Designed with <span className="text-danger">♥</span> for Students & Recruiters</p>
         </div>
       </div>

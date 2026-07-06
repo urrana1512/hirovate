@@ -93,7 +93,7 @@ const ManageSlots = () => {
   const [eventSettings, setEventSettings] = useState({
     startDate: '2027-03-30',
     endDate: '2027-03-31',
-    eventName: 'JobFest 2027',
+    eventName: 'Hirovate 2027',
     organizer: 'TOPS Technologies'
   });
 
@@ -211,7 +211,7 @@ const ManageSlots = () => {
               <div className="modal-header border-0 pb-0">
                 <div>
                   <h5 className="modal-title fw-bold text-dark">Add Seating Slot</h5>
-                  <span className="text-muted small">Choose your days and times within the JobFest dates.</span>
+                  <span className="text-muted small">Choose your days and times within the Hirovate dates.</span>
                 </div>
                 <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
               </div>
@@ -305,7 +305,7 @@ const ManageSlots = () => {
         <div className="premium-card p-5 text-center">
           <FiCalendar className="text-muted display-4 mb-3" />
           <h5 className="fw-bold text-dark">No Seating Slots Configured</h5>
-          <p className="text-muted small">Configure date & time blocks above within the active JobFest period.</p>
+          <p className="text-muted small">Configure date & time blocks above within the active Hirovate period.</p>
         </div>
       )}
     </PageTransition>

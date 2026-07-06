@@ -65,7 +65,8 @@ const VerifyOTP = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="row justify-content-center">
         <div className="col-md-6 col-lg-5">
           <div className="premium-card p-4 p-md-5 text-center">
-            <img src="/logo.png" alt="JobFest Logo" className="mb-4" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+            <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only mb-4" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+            <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only mb-4" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
             <h3 className="fw-bold text-main mb-2">Verify Your Account</h3>
             <p className="text-muted mb-4">We've sent a 6-digit verification code to your email and phone number.</p>
 

@@ -18,7 +18,7 @@ const sendEmail = async (options) => {
     });
 
     const mailOptions = {
-      from: `JobFest <${process.env.EMAIL_USER}>`,
+      from: `Hirovate <${process.env.EMAIL_USER}>`,
       to: options.email,
       subject: options.subject,
       text: options.message,

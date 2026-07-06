@@ -5,7 +5,7 @@ import api from '../../services/api';
 import { toast } from 'react-toastify';
 
 const SystemSettings = () => {
-  const [eventName, setEventName] = useState('JobFest 2027');
+  const [eventName, setEventName] = useState('Hirovate 2027');
   const [organizer, setOrganizer] = useState('TOPS Technologies');
   const [startDate, setStartDate] = useState('2027-03-30');
   const [endDate, setEndDate] = useState('2027-03-31');
@@ -16,7 +16,7 @@ const SystemSettings = () => {
       try {
         const res = await api.get('/admin/settings');
         const { eventName: evName, organizer: orgName, startDate: start, endDate: end } = res.data.data;
-        setEventName(evName || 'JobFest 2027');
+        setEventName(evName || 'Hirovate 2027');
         setOrganizer(orgName || 'TOPS Technologies');
         setStartDate(start || '2027-03-30');
         setEndDate(end || '2027-03-31');
@@ -61,14 +61,14 @@ const SystemSettings = () => {
       <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
         <div>
           <h2 className="fw-bold text-primary mb-1">Platform System Configurations</h2>
-          <p className="text-muted mb-0">Configure dynamic JobFest drive dates, event branding, organizers, and years.</p>
+          <p className="text-muted mb-0">Configure dynamic Hirovate drive dates, event branding, organizers, and years.</p>
         </div>
       </div>
 
       <div className="row g-4">
         <div className="col-lg-8">
           <form onSubmit={handleSave} className="premium-card p-4 bg-white">
-            <h5 className="fw-bold mb-4 text-dark"><FiServer className="text-primary me-2"/> Active JobFest Setup</h5>
+            <h5 className="fw-bold mb-4 text-dark"><FiServer className="text-primary me-2"/> Active Hirovate Setup</h5>
             
             <div className="row g-3 mb-4">
               <div className="col-md-6">
@@ -78,7 +78,7 @@ const SystemSettings = () => {
                   className="form-control" 
                   value={eventName}
                   onChange={(e) => setEventName(e.target.value)}
-                  placeholder="e.g. JobFest 2027"
+                  placeholder="e.g. Hirovate 2027"
                   required
                 />
               </div>

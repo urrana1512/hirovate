@@ -269,7 +269,7 @@ const CompanyDetails = () => {
                       <div className="mb-4">
                         <span className="text-muted small d-block mb-2">
                           <FiClock className="text-primary me-1" /> Interview
-                          Timings (JobFest Drive Days)
+                          Timings (Hirovate Drive Days)
                         </span>
                         <div className="d-flex flex-wrap gap-2">
                           {job.availability.map((avail, idx) => (
@@ -368,7 +368,7 @@ const CompanyDetails = () => {
             {company?.attendanceTimings && company.attendanceTimings.length > 0 && (
               <div className="mt-4 pt-3 border-top">
                 <h6 className="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                  <FiCalendar className="text-primary" /> JobFest Attendance
+                  <FiCalendar className="text-primary" /> Hirovate Attendance
                 </h6>
                 <div className="d-flex flex-column gap-2">
                   {company.attendanceTimings.map((timing, index) => (
@@ -426,7 +426,7 @@ const CompanyDetails = () => {
               <div className="modal-body py-4">
                 <p className="text-muted mb-3">
                   You are applying directly for the following placement position
-                  at the JobFest drive:
+                  at the Hirovate drive:
                 </p>
                 <div className="p-3 bg-light rounded-3 border mb-3">
                   <h6 className="fw-bold text-dark mb-2">

@@ -46,9 +46,9 @@ exports.register = async (req, res) => {
     });
 
     // Send OTP
-    const message = `Your JobFest verification code is: ${otp}. It is valid for 10 minutes.`;
+    const message = `Your Hirovate verification code is: ${otp}. It is valid for 10 minutes.`;
     console.log(`\n📨 [Registration OTP] User: ${user.email} | OTP: ${otp}\n`);
-    await sendEmail({ email: user.email, subject: 'JobFest - Verify your account', message });
+    await sendEmail({ email: user.email, subject: 'Hirovate - Verify your account', message });
     await sendSMS({ phone: user.phone, message });
 
     res.status(201).json({
@@ -187,9 +187,9 @@ exports.forgotPassword = async (req, res) => {
     user.resetPasswordExpire = Date.now() + 10 * 60 * 1000;
     await user.save({ validateBeforeSave: false });
 
-    const message = `Your JobFest password reset OTP is: ${otp}. It is valid for 10 minutes.`;
+    const message = `Your Hirovate password reset OTP is: ${otp}. It is valid for 10 minutes.`;
     console.log(`\n🔑 [Password Reset OTP] User: ${user.email} | OTP: ${otp}\n`);
-    await sendEmail({ email: user.email, subject: 'JobFest - Password Reset', message });
+    await sendEmail({ email: user.email, subject: 'Hirovate - Password Reset', message });
 
     res.status(200).json({ success: true, message: 'Password reset OTP sent to email' });
   } catch (error) {

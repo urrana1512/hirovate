@@ -57,9 +57,10 @@ const Register = () => {
         <div className="col-md-8 col-lg-6">
           <div className="premium-card p-4 p-md-5">
             <div className="text-center mb-4">
-              <img src="/logo.png" alt="JobFest Logo" className="mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only mb-3" style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '12px' }} />
               <h2 className="fw-bold text-main">Create Account</h2>
-              <p className="text-muted">Join JobFest and take the next step in your career.</p>
+              <p className="text-muted">Join Hirovate and take the next step in your career.</p>
             </div>
 
             {/* Role Selection */}

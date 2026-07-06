@@ -14,7 +14,7 @@ const StudentLiveQueue = () => {
   // Call simulator states
   const [incomingCall, setIncomingCall] = useState(false);
   const [callActive, setCallActive] = useState(false);
-  const [callerName, setCallerName] = useState('JobFest Calling...');
+  const [callerName, setCallerName] = useState('Hirovate Calling...');
   const [callMessage, setCallMessage] = useState('');
   
   const lastStatusRef = useRef('');
@@ -35,7 +35,7 @@ const StudentLiveQueue = () => {
         if (status !== lastStatusRef.current) {
           if (status === 'turn_near') {
             triggerVoiceCall(
-              `Hello ${participant.studentProfile?.firstName || 'Student'}, your interview turn for ${res.data.data.queue?.company?.companyName} - ${res.data.data.queue?.job?.title} is coming soon. Please be present at your allocated venue: ${res.data.data.queue?.venue}. Thank you for using JobFest.`
+              `Hello ${participant.studentProfile?.firstName || 'Student'}, your interview turn for ${res.data.data.queue?.company?.companyName} - ${res.data.data.queue?.job?.title} is coming soon. Please be present at your allocated venue: ${res.data.data.queue?.venue}. Thank you for using Hirovate.`
             );
           } else if (status === 'current') {
             triggerVoiceCall(
@@ -290,7 +290,7 @@ const StudentLiveQueue = () => {
               </div>
               <button 
                 className="btn btn-primary btn-sm px-3 rounded-pill fw-bold shadow-sm"
-                onClick={() => triggerVoiceCall(`Testing JobFest AI smart notification. Welcome, ${liveQueue.participant.studentProfile?.firstName || 'Candidate'}. Ready for live drive!`)}
+                onClick={() => triggerVoiceCall(`Testing Hirovate AI smart notification. Welcome, ${liveQueue.participant.studentProfile?.firstName || 'Candidate'}. Ready for live drive!`)}
               >
                 Test Voice Call Simulator
               </button>
@@ -332,7 +332,7 @@ const StudentLiveQueue = () => {
             <div className="premium-card p-4 bg-white shadow-sm border border-light">
               <h5 className="fw-bold mb-3 text-dark">Queue Instructions</h5>
               <ol className="text-muted small ps-3 mb-0 d-flex flex-column gap-3">
-                <li>Keep this live tracker open during the JobFest placement drive.</li>
+                <li>Keep this live tracker open during the Hirovate placement drive.</li>
                 <li>Your queue position and estimated waiting time update automatically via Socket.IO without page refreshes.</li>
                 <li>When your turn is near (#1 position), you will receive a simulated <strong>AI voice call alert</strong>. Click the green button to accept and listen to the instructions!</li>
                 <li>When your turn arrives, please proceed to <strong>{liveQueue.queue?.venue}</strong> immediately.</li>

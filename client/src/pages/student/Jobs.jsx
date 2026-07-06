@@ -121,7 +121,7 @@ const Jobs = () => {
           <h2 className="fw-bold text-primary mb-1">Explore Open Vacancies</h2>
           <p className="text-muted mb-0">
             Search and directly apply for internships and full-time jobs listed
-            on JobFest.
+            on Hirovate.
           </p>
         </div>
       </div>
@@ -266,7 +266,7 @@ const Jobs = () => {
                     <div className="mb-4 bg-light p-3 rounded-3 border">
                       <span className="text-muted small d-block mb-2 fw-bold">
                         <FiClock className="me-1 text-primary" /> Interview
-                        Schedules (JobFest Days)
+                        Schedules (Hirovate Days)
                       </span>
                       <div className="d-flex flex-column gap-2">
                         {job.availability.map((avail, idx) => (
@@ -354,7 +354,7 @@ const Jobs = () => {
 
               <div className="modal-body py-4">
                 <p className="text-muted mb-3">
-                  You are applying directly for the following placement position at the JobFest drive:
+                  You are applying directly for the following placement position at the Hirovate drive:
                 </p>
                 <div className="p-3 bg-light rounded-3 border mb-3">
                   <h6 className="fw-bold text-dark mb-2">{selectedJob.title}</h6>

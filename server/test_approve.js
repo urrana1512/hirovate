@@ -3,13 +3,13 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 
 async function test() {
-  await mongoose.connect('mongodb://localhost:27017/jobfest');
+  await mongoose.connect('mongodb://localhost:27017/hirovate');
   
   try {
     // Login as Admin
     const loginRes = await axios.post('http://localhost:5000/api/auth/login', {
-      email: 'jobfestadmin@gmail.com',
-      password: 'jobfest@123'
+      email: 'hirovateadmin@gmail.com',
+      password: 'hirovate@123'
     });
     const token = loginRes.data.token;
     

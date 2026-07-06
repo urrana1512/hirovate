@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 
 async function test() {
-  await mongoose.connect('mongodb://localhost:27017/jobfest');
+  await mongoose.connect('mongodb://localhost:27017/hirovate');
   
   try {
     // Check if server is running
@@ -12,8 +12,8 @@ async function test() {
     
     // Check companies endpoint
     const loginRes = await axios.post('http://localhost:5000/api/auth/login', {
-      email: 'jobfestadmin@gmail.com', // Log in as admin, but they have 'admin' role
-      password: 'jobfest@123'
+      email: 'hirovateadmin@gmail.com', // Log in as admin, but they have 'admin' role
+      password: 'hirovate@123'
     });
     console.log('Admin Login successful');
     

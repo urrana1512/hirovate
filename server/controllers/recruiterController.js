@@ -92,7 +92,7 @@ exports.getProfile = async (req, res) => {
     // Pre-populate attendanceTimings if missing or empty
     if (!company.attendanceTimings || company.attendanceTimings.length === 0) {
       const SystemSetting = require('../models/SystemSetting');
-      let datesSetting = await SystemSetting.findOne({ key: 'jobfest_dates' });
+      let datesSetting = await SystemSetting.findOne({ key: 'hirovate_dates' });
       const startDate = datesSetting?.value?.startDate || '2027-03-30';
       const endDate = datesSetting?.value?.endDate || '2027-03-31';
 
@@ -205,7 +205,7 @@ exports.createJob = async (req, res) => {
 
         if (!compAvail || !compAvail.attending) {
           return res.status(400).json({ 
-            message: `Your company is not scheduled to attend JobFest on ${jobDateStr}. Please update your Attendance timings in profile setup first.` 
+            message: `Your company is not scheduled to attend Hirovate on ${jobDateStr}. Please update your Attendance timings in profile setup first.` 
           });
         }
 
@@ -253,7 +253,7 @@ exports.updateJob = async (req, res) => {
 
         if (!compAvail || !compAvail.attending) {
           return res.status(400).json({ 
-            message: `Your company is not scheduled to attend JobFest on ${jobDateStr}. Please update your Attendance timings in profile setup first.` 
+            message: `Your company is not scheduled to attend Hirovate on ${jobDateStr}. Please update your Attendance timings in profile setup first.` 
           });
         }
 
@@ -337,7 +337,7 @@ exports.createSlot = async (req, res) => {
 
       if (!compAvail || !compAvail.attending) {
         return res.status(400).json({ 
-          message: `Your company is not scheduled to attend JobFest on ${slotDateStr}. Please update your Attendance timings in profile setup first.` 
+          message: `Your company is not scheduled to attend Hirovate on ${slotDateStr}. Please update your Attendance timings in profile setup first.` 
         });
       }
 

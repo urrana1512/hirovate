@@ -89,8 +89,9 @@ const Sidebar = ({ collapsed, toggleSidebar, mobileOpen, role = 'student' }) => 
     <aside className={`sidebar ${collapsed ? 'collapsed' : ''} ${mobileOpen ? 'mobile-open' : ''}`} style={{ overflowY: 'auto' }}>
       <div className="sidebar-header" style={{ padding: collapsed ? '1.5rem 0.5rem' : '1.5rem', justifyContent: collapsed ? 'center' : 'space-between' }}>
         <div className="sidebar-logo d-flex align-items-center gap-2">
-          <img src="/logo.png" alt="JobFest Logo" style={{ width: '30px', height: '30px', objectFit: 'cover', borderRadius: '6px' }} />
-          {!collapsed && <span className="fw-bold fs-4 text-white" style={{ letterSpacing: '0.5px' }}>JobFest</span>}
+          <img src="/logo-light.png" alt="Hirovate Logo" className="logo-light-only" style={{ width: '30px', height: '30px', objectFit: 'cover', borderRadius: '6px' }} />
+          <img src="/logo-dark.png" alt="Hirovate Logo" className="logo-dark-only" style={{ width: '30px', height: '30px', objectFit: 'cover', borderRadius: '6px' }} />
+          {!collapsed && <span className="fw-bold fs-4 text-main" style={{ letterSpacing: '0.5px' }}>Hirovate</span>}
         </div>
         {!collapsed && (
           <button className="sidebar-toggle-btn d-none d-md-flex" onClick={toggleSidebar}>

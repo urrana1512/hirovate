@@ -52,6 +52,14 @@
   --shadow-hover: 0 14px 24px -4px rgba(0,0,0,0.4);
 }
 
+/* Logo theme toggle support */
+body:not([data-theme='dark']) .logo-dark-only {
+  display: none !important;
+}
+body[data-theme='dark'] .logo-light-only {
+  display: none !important;
+}
+
 * {
   margin: 0;
   padding: 0;

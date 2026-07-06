@@ -52,7 +52,7 @@ const CompanyListing = () => {
       <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
         <div>
           <h2 className="fw-bold text-primary mb-1">Discover Companies</h2>
-          <p className="text-muted mb-0">Find and apply to top companies hiring on JobFest.</p>
+          <p className="text-muted mb-0">Find and apply to top companies hiring on Hirovate.</p>
         </div>
       </div>
 

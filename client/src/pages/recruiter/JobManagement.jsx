@@ -94,7 +94,7 @@ const JobManagement = () => {
   const [eventSettings, setEventSettings] = useState({
     startDate: '2027-03-30',
     endDate: '2027-03-31',
-    eventName: 'JobFest 2027',
+    eventName: 'Hirovate 2027',
     organizer: 'TOPS Technologies'
   });
   
@@ -137,7 +137,7 @@ const JobManagement = () => {
         currentSettings = settingsRes.data.data;
       }
 
-      // Initialize default availability timings based on active JobFest dates
+      // Initialize default availability timings based on active Hirovate dates
       const days = getEventDatesArray(currentSettings.startDate, currentSettings.endDate);
       const defaultAvails = days.map((day, idx) => ({
         date: day,
