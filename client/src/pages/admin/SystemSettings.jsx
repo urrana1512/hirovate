@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const SystemSettings = () => {
   const [eventName, setEventName] = useState('Hirovate 2027');
-  const [organizer, setOrganizer] = useState('TOPS Technologies');
+  const [organizer, setOrganizer] = useState('Hirovate');
   const [startDate, setStartDate] = useState('2027-03-30');
   const [endDate, setEndDate] = useState('2027-03-31');
   const [loading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ const SystemSettings = () => {
         const res = await api.get('/admin/settings');
         const { eventName: evName, organizer: orgName, startDate: start, endDate: end } = res.data.data;
         setEventName(evName || 'Hirovate 2027');
-        setOrganizer(orgName || 'TOPS Technologies');
+        setOrganizer(orgName || 'Hirovate');
         setStartDate(start || '2027-03-30');
         setEndDate(end || '2027-03-31');
       } catch (error) {
@@ -90,7 +90,7 @@ const SystemSettings = () => {
                   className="form-control" 
                   value={organizer}
                   onChange={(e) => setOrganizer(e.target.value)}
-                  placeholder="e.g. TOPS Technologies"
+                  placeholder="e.g. Hirovate"
                   required
                 />
               </div>

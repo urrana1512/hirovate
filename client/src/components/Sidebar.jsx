@@ -128,10 +128,7 @@ const Sidebar = ({ collapsed, toggleSidebar, mobileOpen, role = 'student' }) => 
           </button>
           {!collapsed && (
             <div className="text-center mt-3 pt-2 border-top" style={{ fontSize: '0.7rem', color: '#cbd5e1' }}>
-              Organized by <br />
-              <a href="https://www.tops-int.com/" target="_blank" rel="noreferrer" className="text-decoration-none fw-bold" style={{ color: 'var(--primary-color)' }}>
-                TOPS Technologies
-              </a>
+              <span className="fw-semibold text-muted">Hirovate Platform v1.0</span>
             </div>
           )}
         </div>

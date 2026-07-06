@@ -44,7 +44,7 @@ const StudentManagement = () => {
         courseName,
         courseGrade
       });
-      toast.success('TOPS Placement credentials assigned successfully!');
+      toast.success('Hirovate Placement credentials assigned successfully!');
       setShowModal(false);
       fetchStudents();
     } catch (error) {
@@ -82,8 +82,8 @@ const StudentManagement = () => {
                   <th className="ps-4">Student</th>
                   <th>CGPA</th>
                   <th>Contact</th>
-                  <th>TOPS Course</th>
-                  <th>TOPS Grade</th>
+                  <th>Hirovate Course</th>
+                  <th>Hirovate Grade</th>
                   <th>Status</th>
                   <th className="pe-4 text-end">Moderate</th>
                 </tr>
@@ -133,7 +133,7 @@ const StudentManagement = () => {
                             setShowModal(true);
                           }}
                         >
-                          <FiAward /> Assign TOPS
+                          <FiAward /> Assign Hirovate
                         </button>
                         {st.status !== 'approved' && (
                           <button className="btn btn-sm btn-outline-success d-flex align-items-center gap-1" onClick={() => handleUpdateStatus(st._id, 'approved')}>
@@ -170,7 +170,7 @@ const StudentManagement = () => {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content border-0 shadow-lg" style={{ borderRadius: '1rem' }}>
               <div className="modal-header bg-primary text-white border-0 py-3" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }}>
-                <h5 className="modal-title fw-bold">🎓 Assign TOPS Placements Credentials</h5>
+                <h5 className="modal-title fw-bold">🎓 Assign Hirovate Placements Credentials</h5>
                 <button type="button" className="btn-close btn-close-white" onClick={() => setShowModal(false)} aria-label="Close"></button>
               </div>
               <form onSubmit={handleSaveCredentials}>
@@ -178,7 +178,7 @@ const StudentManagement = () => {
                   <p className="text-muted small">Update verified placement program course name and performance grades for <strong>{selectedStudent.name}</strong>.</p>
                   
                   <div className="mb-3">
-                    <label className="form-label fw-semibold">TOPS Course Name</label>
+                    <label className="form-label fw-semibold">Hirovate Course Name</label>
                     <input 
                       type="text" 
                       className="form-control" 
@@ -190,7 +190,7 @@ const StudentManagement = () => {
                   </div>
 
                   <div className="mb-3">
-                    <label className="form-label fw-semibold">TOPS Placement Grade</label>
+                    <label className="form-label fw-semibold">Hirovate Placement Grade</label>
                     <select 
                       className="form-select" 
                       value={courseGrade} 

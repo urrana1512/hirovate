@@ -21,9 +21,9 @@ const LandingPage = () => {
               animate="visible"
               variants={fadeIn}
             >
-              <a href="https://www.tops-int.com/" target="_blank" rel="noreferrer" className="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill fw-semibold text-decoration-none hover-lift">
-                Organized by TOPS Technologies 🚀
-              </a>
+              <span className="badge bg-primary-light text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">
+                Powered by Hirovate 🚀
+              </span>
               <h1 className="display-3 fw-bold text-main mb-4 lh-tight">
                 Launch Your Career with <span className="text-primary">Hirovate</span>
               </h1>

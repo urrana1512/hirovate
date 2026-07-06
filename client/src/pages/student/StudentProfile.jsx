@@ -267,20 +267,20 @@ const StudentProfile = () => {
 
           <div className="premium-card p-4 mt-4 border-primary" style={{ background: 'linear-gradient(135deg, #f0f7ff, #e0effe)' }}>
             <h5 className="fw-bold mb-3 text-primary d-flex align-items-center gap-2">
-              <FiShield className="text-primary"/> Tops Credentials
+              <FiShield className="text-primary"/> Hirovate Credentials
             </h5>
             <div className="mb-3">
               <span className="text-muted small d-block">Course Enrolled</span>
-              <span className="fw-bold text-dark">{profile?.courseName || 'Python Full Stack Development (TOPS)'}</span>
+              <span className="fw-bold text-dark">{profile?.courseName || 'Python Full Stack Development (Hirovate)'}</span>
             </div>
             <div>
-              <span className="text-muted small d-block mb-1">TOPS Performance Grade</span>
+              <span className="text-muted small d-block mb-1">Hirovate Performance Grade</span>
               <span className="badge bg-success px-3 py-2 rounded fw-bold text-uppercase" style={{ fontSize: '0.9rem' }}>
                 {profile?.courseGrade || 'A+ Grade'}
               </span>
             </div>
             <small className="text-muted d-block mt-3 border-top pt-2" style={{ fontSize: '0.75rem' }}>
-              * Credentials managed directly by TOPS Placement Authority and cannot be modified by students.
+              * Credentials managed directly by Hirovate Placement Authority and cannot be modified by students.
             </small>
           </div>
         </div>
@@ -519,7 +519,7 @@ const StudentProfile = () => {
                                   className="form-control form-control-sm" 
                                   value={edu.school} 
                                   onChange={(e) => handleEducationChange(idx, 'school', e.target.value)} 
-                                  placeholder="e.g. Tops Academy, GSEB"
+                                  placeholder="e.g. Hirovate Academy, GSEB"
                                   required
                                 />
                               </div>

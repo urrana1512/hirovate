@@ -95,7 +95,7 @@ const JobManagement = () => {
     startDate: '2027-03-30',
     endDate: '2027-03-31',
     eventName: 'Hirovate 2027',
-    organizer: 'TOPS Technologies'
+    organizer: 'Hirovate Technologies'
   });
   
   // Form modal state

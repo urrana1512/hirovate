@@ -232,13 +232,13 @@ const ApplicantManagement = () => {
                   <h4 className="fw-bold text-dark mb-0">{selectedApp.student?.name}</h4>
                   <p className="text-muted mb-1">{selectedApp.student?.email} • {selectedApp.student?.phone || 'Contact pending'}</p>
                   
-                  {/* Tops Verified Grades */}
+                  {/* Hirovate Verified Grades */}
                   <div className="d-flex justify-content-center gap-2 mt-2">
                     <span className="badge bg-success-light text-success fw-bold px-3 py-1.5 rounded-pill">
-                      TOPS Course: {selectedApp.studentProfile?.courseName || 'Full Stack Placement Prep'}
+                      Hirovate Course: {selectedApp.studentProfile?.courseName || 'Full Stack Placement Prep'}
                     </span>
                     <span className="badge bg-warning-light text-warning fw-bold px-3 py-1.5 rounded-pill">
-                      TOPS Grade: {selectedApp.studentProfile?.courseGrade || 'A+ Grade'}
+                      Hirovate Grade: {selectedApp.studentProfile?.courseGrade || 'A+ Grade'}
                     </span>
                   </div>
                 </div>

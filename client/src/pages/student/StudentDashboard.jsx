@@ -13,7 +13,7 @@ const StudentDashboard = () => {
     startDate: '2027-03-30',
     endDate: '2027-03-31',
     eventName: 'Hirovate 2027',
-    organizer: 'TOPS Technologies'
+    organizer: 'Hirovate Technologies'
   });
   const user = JSON.parse(localStorage.getItem('user') || '{}');
 
